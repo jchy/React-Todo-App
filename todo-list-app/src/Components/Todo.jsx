@@ -8,14 +8,14 @@ const Todo = () =>{
         {
             id: 1,
             title: "Default",
-            status: false
+            status: "Incomplete"
         }
     ]);
 
     const handleTaskCreate = (title)=>{
         const payload = {
             title: title,
-            status: false,
+            status: 'Incomplete',
             id: todos.length+1
         };
         setTodos([...todos, payload]);
@@ -31,7 +31,7 @@ const Todo = () =>{
 
     // togle task
     const handleToggle = (id) =>{
-        const updatedTodos = todos.map((item) => item.id===id? {...item,status: !item.status}:item);
+        const updatedTodos = todos.map((item) => item.id===id? {...item,status: (item.status==='Done')?('Incomeplete'):'Done'}:item);
         setTodos(updatedTodos);
     }
 

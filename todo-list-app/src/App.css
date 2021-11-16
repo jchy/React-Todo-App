@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+body{
+  background-color:black;
+  color:white ;
+}
+.header{
+  text-align:center;
+  font-size:50px;
+  font-weight: 900;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  width:60%;
+  margin: auto;
+  background-color:rgb(212, 230, 8) ;
+  /* margin-top:100px; */
+  padding: 20px 50px 50px 50px;
+  color: black;
+}
+.input-btn{
+  background-color:black;
+  height:40px;
+  width:70%;
+  border-radius: 10px;
+  border: 1px solid black;
+  font-size:20px;
+  padding-left: 10px;
+  color: white;
+  margin-right: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.Add-btn{
+  background-color:rgb(84, 2, 2);
+  height:40px;
+  width:15%;
+  border-radius: 10px;
+  border: 1px solid black;
+  font-size:18px;
+  padding-left: 10px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-items{
+  /* border: 1px solid black; */
+  width:90%;
+  /* text-align: center; */
+  margin-left:4%;
+  margin-top: 10px;
+  height:40px;
+  padding-top: 10px;
+  padding-left: 20px;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.items{
+  /* background-color:red; */
+  height:34px;
+  /* padding: 5px; */
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.task{
+  padding: 6px;
+  background-color:rgb(57, 2, 50);
+  color: white;
+  height:32px;
+  border: 1px solid black;
+}
+.delete-btn{
+  background-color:white;
+  font-size:12px;
+  height: 32px;
+  width:30px;
+  margin-left: 5px;
+  font-size:16px;
+  font-weight:700;
+}
+.toggle-btn{
+  /* background-color:white; */
+  background-color:black;
+  color: white;
+  height:32px;
+  font-size:16px;
+  margin-left: 5px;
+  width:70px;
+}
+.i-num{
+  height:32px;
+  background-color:black;
+  color: white ;
+  margin-right: 5px;
+  padding:4px;
+  border-radius:5px;
+  /* margin-left: 5px; */
+  /* border: 1px solid black; */
+}
+#status{
+  margin-left: 5px;
+  background-color:rgb(0, 20, 85);
 }
