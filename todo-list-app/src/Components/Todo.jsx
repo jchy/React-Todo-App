@@ -2,13 +2,16 @@ import {useState} from 'react';
 import Header from "./Header";
 import TodoInput from './TodoInput';
 import TodoItem from './TodoItem';
+import {v4 as uuid} from 'uuid';
 
 const Todo = () =>{
     const [todos, setTodos] = useState([
         {
             id: 1,
             title: "Default",
-            status: "Incomplete"
+            dummyId: 1,
+            status: "Incomplete",
+            description: ""
         }
     ]);
 
@@ -16,7 +19,8 @@ const Todo = () =>{
         const payload = {
             title: title,
             status: 'Incomplete',
-            id: todos.length+1,
+            id: uuid(),
+            dummyId: todos.length+1,
             description: description
         };
         setTodos([...todos, payload]);
@@ -46,6 +50,7 @@ const Todo = () =>{
               status={todos.status}
               key={todos.id} 
               id={todos.id} 
+              dummyId={todos.dummyId}
               description={todos.description}
               handleDelete={handleDelete}
               handleToggle = {handleToggle}
