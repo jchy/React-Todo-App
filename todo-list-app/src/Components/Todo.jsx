@@ -12,11 +12,12 @@ const Todo = () =>{
         }
     ]);
 
-    const handleTaskCreate = (title)=>{
+    const handleTaskCreate = (title,description)=>{
         const payload = {
             title: title,
             status: 'Incomplete',
-            id: todos.length+1
+            id: todos.length+1,
+            description: description
         };
         setTodos([...todos, payload]);
         // console.log(payload);
@@ -45,6 +46,7 @@ const Todo = () =>{
               status={todos.status}
               key={todos.id} 
               id={todos.id} 
+              description={todos.description}
               handleDelete={handleDelete}
               handleToggle = {handleToggle}
             />
