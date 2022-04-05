@@ -2,6 +2,7 @@
 Todo app using React as tech stacks
 ### Steps to run this app
 - git clone 
+- cd todo-list-app
 - npm install
 - npm run start
 - Snapshot of the project
