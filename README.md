@@ -1,5 +1,7 @@
 # React-Todo-App
 Todo app using React as tech stacks
+
+### To view this project cick [Here]
 ### Steps to run this app
 - git clone 
 - cd todo-list-app
